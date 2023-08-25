@@ -3,7 +3,7 @@ const app = express();
 const connectDB = require('./config/mongodb');
 //connecting to mongo
 connectDB();
-app.use(express.json({ extended: true }));
+app.use(express.json({ extended: false }));
 
 const PORT = process.env.PORT || 5000;
 
