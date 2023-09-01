@@ -1,4 +1,8 @@
 {
     "mongoURI":"mongodb+srv://pavan:3uJGlRDCb8ZjhSKg@cluster0.ixqr5s6.mongodb.net/?retryWrites=true&w=majority",
-    "jwtSecret":"motham-script"
+    "jwtSecret":"motham-script",
+    "github": {
+        "clientID": "64ccb52587f0fb70a1eb",
+        "clientSecret": "a41f0a2a6431efd917649a5a1430706061fde7ad"
+      }
 } 
