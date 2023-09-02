@@ -11,7 +11,7 @@ const { required } = require('joi');
 
 //@route api/profile/me
 //desc  get current user profile
-//acess private
+//access private
 router.get('/me', auth, async(req, res) => {
     try {
         const profile = await Profile.findOne({ user: req.user.id }).populate('user', ['name', 'avatar']);
@@ -34,7 +34,7 @@ router.get('/me', auth, async(req, res) => {
 
 //@route api/profile
 //desc  create and u[date] profile
-//acess private
+//access private
 
 router.post('/', [auth, [
     check('status', 'Status is required').not().isEmpty(),
