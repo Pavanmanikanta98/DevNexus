@@ -10,7 +10,7 @@ const jwt = require('jsonwebtoken');
 
 //get user model
 const User = require('../../models/Users');
-//@route api/user
+//@route api/users
 //desc  register user 
 router.post('/', [
     check('name', 'name is required').not().isEmpty(),
