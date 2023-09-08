@@ -11,8 +11,8 @@ const Landing = () => {
                     Craft your profile, showcase your projects, share insights, and join a supportive developer community.
                     </p>
                     <div className="buttons">
-                        <Link to="/register" className="btn btn-primary">Sign Up</Link>
-                        <Link to="/login" className="btn btn-light">Login</Link>
+                        <Link to="/Register" className="btn btn-primary">Sign Up</Link>
+                        <Link to="/Login" className="btn btn-light">Login</Link>
                     </div>
                 </div>
             </div>

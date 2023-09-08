@@ -19,6 +19,9 @@ router.get('/', auth,async(req, res) => {
     }
     //res.send(' auth route')
 });
+
+
+
 //@route api/auth
 //desc  authenticate user & get token 
 router.post('/', [
