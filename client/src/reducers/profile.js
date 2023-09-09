@@ -1,4 +1,4 @@
-import { GET_PROFILE, PROFILE_ERROR } from "../actions/types";
+import { GET_PROFILE, PROFILE_ERROR,PROFILE_CLEAR } from "../actions/types";
 
 const initialState = {
     profile: null,
@@ -24,6 +24,13 @@ const dashboardReducer = function (state = initialState, action) {
                 error: payload,
                 loading: false
             };
+        case PROFILE_CLEAR:
+            return {
+                ...state,
+                profile: null,
+                repos: [],
+                loading:false
+            }
         default:
             return state;
     }
