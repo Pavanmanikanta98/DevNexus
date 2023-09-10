@@ -33,14 +33,20 @@ export const createProfile = (FormData, history, edit = false) => async dispatch
             type: GET_PROFILE,
             payload: res.data
         });
-        dispatch(setAlert(edit ? 'Profile Updated' : 'Profile Created'));
+        dispatch(setAlert(edit ? 'Profile Updated' : 'Profile Created','success'));
         if (!edit) {
-            history.push('/dashboard');
+            history('/dashboard');
         }
     } catch (err) {
-        const { errors } = err.response.data;
-        if (errors) {
-            errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
+        if (err.response) {
+            const { errors } = err.response.data;
+            if (errors) {
+                errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
+            }
+            //console.error(err.response.data); 
+        } else {
+            
+            console.error('Network error:', err.message);
         }
         dispatch({
             type: PROFILE_ERROR,
