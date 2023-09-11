@@ -4,39 +4,42 @@ import { connect } from 'react-redux';
 import {useNavigate } from "react-router-dom";
 import { createProfile, getCurrentProfile } from '../../actions/profile';
 
-const EditProfile = ({ createProfile, getCurrentProfile, profile: { profile, loading } }) => {
+const initialState = {
+    company: '',
+    website: '',
+    location: '',
+    status: '',
+    skills: '',
+    githubusername: '',
+    bio: '',
+    twitter: '',
+    facebook: '',
+    linkedin: '',
+    youtube: '',
+    instagram: ''
+};
+const EditProfile = ({ createProfile, profile: { profile, loading },getCurrentProfile }) => {
     const history = useNavigate();
-    const [formData, setFormData] = useState({
-        company: '',
-        website: '',
-        location: '',
-        status: '',
-        skills: '',
-        githubusername: '',
-        bio: '',
-        x: '',
-        facebook: '',
-        linkedIn: '',
-        youtube: '',
-        instagram: ''
-    });
+    const [formData, setFormData] = useState(initialState);
     const [displaySocialInputs, toggleSocialInputs] = useState('false');
+    //const initialState = {};
     useEffect(() => {
+        
         if (!profile) getCurrentProfile();
 
         // if we finished loading and we do have a profile
         // then build our profileData
         if (!loading && profile) {
-            const { skills, social, ...rest } = profile;
-            // Combine skills array into a comma-separated string
-            const skillsString = Array.isArray(skills) ? skills.join(', ') : '';
-             // Create a profileData object with updated fields
-            const profileData = {
-                ...initialState,
-                ...rest,
-                skills: skillsString, // Set skills as a string
-                ...social, 
-            };
+            const profileData = { ...initialState };
+            for (const key in profile) {
+                if (key in profileData) profileData[key] = profile[key];
+            }
+            for (const key in profile.social) {
+                if (key in profileData) profileData[key] = profile.social[key];
+            }
+             // the skills may be an array from our API response
+            if (Array.isArray(profileData.skills))
+                profileData.skills = profileData.skills.join(', ');
             // set local state with the profileData
             setFormData(profileData);
         }
@@ -54,10 +57,6 @@ const EditProfile = ({ createProfile, getCurrentProfile, profile: { profile, loa
         x,
         linkedIn } = formData;
     const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
-
-
-
-
 
 
     const onSubmit = e => {
@@ -170,11 +169,12 @@ const EditProfile = ({ createProfile, getCurrentProfile, profile: { profile, loa
 EditProfile.propTypes = {
     createProfile: PropTypes.func.isRequired,
     getCurrentProfile: PropTypes.func.isRequired,
-    profile:PropTypes.object.isRequired
+    profile: PropTypes.object.isRequired
 };
 
-const mapStateToProps = state => ({
-    profile: state.Profile
-})
+
+const mapStateToProps = (state) => ({
+    profile: state.profile
+});
 
 export default connect(mapStateToProps, { createProfile,getCurrentProfile })(EditProfile);
