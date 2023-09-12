@@ -1,4 +1,4 @@
-import { GET_PROFILE, PROFILE_ERROR,PROFILE_CLEAR } from "../actions/types";
+import { GET_PROFILE, PROFILE_ERROR,PROFILE_CLEAR,UPDATE_PROFILE } from "../actions/types";
 
 const initialState = {
     profile: null,
@@ -13,6 +13,7 @@ const dashboardReducer = function (state = initialState, action) {
     const { type, payload } = action;
     switch (type) {
         case GET_PROFILE:
+        case UPDATE_PROFILE:   
             return {
                 ...state,
                 profile: payload,

@@ -8,6 +8,7 @@ const request = require('request');
 const axios = require('axios');
 const { check, validationResult } = require('express-validator');
 const { required } = require('joi');
+const Post = require( '../../models/Post');
 
 //@route api/profile/me
 //desc  get current user profile
@@ -147,7 +148,7 @@ router.delete('/', auth,async (req, res) => {
     try {
         // console.log("123");
         //to remove post
-
+        await Post.deleteMany({ user: req.user.id });
 
         //to remove profile
         await Profile.findOneAndRemove({ user: req.user.id });
