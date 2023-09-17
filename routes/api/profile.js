@@ -53,7 +53,7 @@ router.post('/', [auth, [
         location,
         bio,
         status,
-        gittubusername,
+        githubusername,
         skills,
         youtube,
         facebook,
@@ -69,7 +69,8 @@ router.post('/', [auth, [
     if (location) profileFields.location = location;
     if (bio) profileFields.bio = bio;
     if (status) profileFields.status = status;
-    if (gittubusername) profileFields.gittubusername = gittubusername;
+// sourcery skip: use-braces
+    if (githubusername) profileFields.githubusername = githubusername;
     if (skills) {
         profileFields.skills = skills.split(',').map(skill => skill.trim());
     }

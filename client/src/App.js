@@ -13,6 +13,8 @@ import CreateProfile from './components/profile-forms/CreateProfile';
 import AddExperience from './components/profile-forms/AddExperience';
 import AddEducation from './components/profile-forms/AddEducation';
 import Profiles from './components/profiles/Profiles';
+import Profile from './components/profile/Profile';
+import Posts from './components/posts/Posts';
 //redux
 
 import { Provider } from 'react-redux';
@@ -43,12 +45,14 @@ const App = () => {
             <Routes>
               <Route exact path='/login' element={ <Login />}  />
               <Route exact path='/register' element={<Register />} />
-              <Route exact path='/profiles' element={ <Profiles /> } />
+              <Route exact path='/profiles' element={<Profiles />} />
+              <Route exact path='/profile/:id' element={ <Profile /> } />
               <Route path='/dashboard' element={<PrivateRoute><Dashboard /></PrivateRoute>} />
               <Route path='/create-profile' element={<PrivateRoute><CreateProfile /></PrivateRoute>} />
               <Route path='/editProfile' element={<PrivateRoute><EditProfile /></PrivateRoute>} />
               <Route path='/addExperience' element={<PrivateRoute><AddExperience /></PrivateRoute>} />
-              <Route path='/addEducation' element= { <PrivateRoute><AddEducation /></PrivateRoute>}/>
+              <Route path='/addEducation' element={<PrivateRoute><AddEducation /></PrivateRoute>} />
+              <Route path='/posts' element= { <PrivateRoute><Posts /></PrivateRoute>}/>
             </Routes>
           
           </section>

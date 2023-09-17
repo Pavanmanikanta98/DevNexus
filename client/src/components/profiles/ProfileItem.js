@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { loadUser } from '../../actions/auth';
+//import { loadUser } from '../../actions/auth';
 
 const ProfileItem = ({
     profile: {
@@ -33,8 +33,8 @@ const ProfileItem = ({
 };
 
 ProfileItem.propTypes = {
-    profile:PropTypes.object.isRequired
+    profile: PropTypes.object.isRequired
 
-}
+};
 
-export default ProfileItem
+export default ProfileItem;
