@@ -9,21 +9,23 @@ import { getPost } from '../../actions/post';
 
 const Post = ({ getPost, post: { post, loading } }) => {
     const { id } = useParams();
+    //console.log(id);
     useEffect(() => {
         getPost(id);
-    }, [getPost, id]);
+    }, [getPost,id]);
 
-    return loading || post === null ? (
-        <Spinner />
-    ) : (
+    return (
+        loading || post === null ? (
+            <Spinner />
+        ) : (
+        
         <section className="container">
             <Link to="/posts" className="btn">
                 Back To Posts
-            </Link>
-            {/* <PostItem post={post} showActions={false} />
-            <CommentForm postId={post._id} /> */}
-    
-        </section>
+                    </Link>
+                    <div>hello there</div>
+            
+        </section> )
     );
 };
 
@@ -33,7 +35,7 @@ Post.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-    post: state.post
+    post:state.post
 });
 
 export default connect(mapStateToProps, { getPost })(Post);

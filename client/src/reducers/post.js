@@ -28,7 +28,7 @@ function postReducer(state = initialState, action) {
             return {
                 ...state,
                 post: payload,
-                loading:false
+                loading: false
             }
         case ADD_POST:
             return {

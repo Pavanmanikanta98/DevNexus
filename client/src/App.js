@@ -54,7 +54,7 @@ const App = () => {
               <Route path='/addExperience' element={<PrivateRoute><AddExperience /></PrivateRoute>} />
               <Route path='/addEducation' element={<PrivateRoute><AddEducation /></PrivateRoute>} />
               <Route path='/posts' element={<PrivateRoute><Posts /></PrivateRoute>} />
-              <Route path='/posts/:id' element= { <PrivateRoute><Post /></PrivateRoute>}/>
+              <Route path='/posts/:id' element= { <PrivateRoute> <Post /> </PrivateRoute>}/>
             </Routes>
           
           </section>
