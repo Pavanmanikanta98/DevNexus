@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { getPosts } from '../../actions/post';
 import Spinner from '../layout/Spinner'; 
 import PostItem from './PostItem';
+import PostForm from './PostForm';
+//import { SchemaTypeOptions } from 'mongoose';
 
 
 const Posts = ({ getPosts, post: { loading, posts } }) => {
@@ -12,7 +14,7 @@ const Posts = ({ getPosts, post: { loading, posts } }) => {
         getPosts();
     }, [getPosts]);
     return (
-        <section className="container">
+        <div className="container">
             <h1 className="large text-primary">Posts</h1>
             <p className="lead">
                 <i className="fas fa-user" />
@@ -22,14 +24,16 @@ const Posts = ({ getPosts, post: { loading, posts } }) => {
                 <Spinner />
             ) : (
                 <Fragment>
+                    
                     <div className="posts">
                         {posts.map((post) => (
                             <PostItem key={post._id} post={post} />
                         ))}
                     </div>
+                    <PostForm />    
                 </Fragment>
             )}
-        </section>
+        </div>
     )
 };
 
