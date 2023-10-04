@@ -28,7 +28,7 @@ const PostForm = ({ addPost }) => {
                 onSubmit={onSubmit}>
                 <textarea
                     name='text'
-                    cols='31'
+                    cols='32'
                     rows='7'
                     placeholder='Share your thoughts...'
                     value={text}
