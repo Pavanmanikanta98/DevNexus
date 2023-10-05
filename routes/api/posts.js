@@ -132,7 +132,7 @@ router.put('/unlike/:id', auth, async (req, res) => {
 
 //@route post api/posts/comments/:id
 //desc  comment on  a post
-router.post('/comment/:id', [auth, [
+router.post('/comments/:id', [auth, [
     check('text', 'Text is required').not().isEmpty()
 ]], async (req, res) => {
     const errors = validationResult(req);
@@ -160,25 +160,25 @@ router.post('/comment/:id', [auth, [
 });
 //@route delete api/posts/comments/:id/:comment_id
 //desc  delete the comment on  a post
-router.delete('/comment/:id/:comment_id', auth, async (req, res) => {
+router.delete('/comments/:id/:comment_id', auth, async (req, res) => {
     try {
         
         const post = await Post.findById(req.params.id);
-       // console.log(post); 
-        //pull the comment ...
-        const comment = post.Comments.find(comment => comment.id === req.params.comment_id);
-       // console.log(comment); 
-        // check for comment has really exists or not 
-        if (!comment) {
-            return res.status(404).json({ msg: 'comment does not exist' });
-        }
-        //check user
-        //console.log(comment.user.toString()); 
-        if (comment.user.toString() !== req.user.id) {
-            return res.status(404).json({ msg: 'user not authorized' });
-        }
-        const rmIndex = post.Comments.findIndex(comment => comment.user === req.user.id);
-        post.Comments.splice(rmIndex, 1);
+        //console.log(post); 
+        
+        if (!post) {
+            return res.status(404).json({ msg: 'Post not found' });
+                }
+        // Find the index of the comment with the matching user
+        const commentIndex = post.Comments.findIndex(
+        (comment) => comment.user.toString() === req.user.id);
+
+        // Check if the comment exist
+        if (commentIndex === -1) {
+            return res.status(404).json({ msg: 'Comment not found' });
+        };
+
+        post.Comments.splice(commentIndex, 1);
         await post.save();
         res.json(post.Comments);
     } catch (err) {

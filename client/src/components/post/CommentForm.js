@@ -3,26 +3,27 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addComment } from '../../actions/post';
 
-
 const CommentForm = ({ postId, addComment }) => {
     const [text, setText] = useState('');
+    const onSubmit = (e) => {
+            e.preventDefault();
+            console.log(postId + "," + text);
+            addComment(postId, { text });
+            setText('');
+    }
+
     return (
         <div className='post-form'>
             <div className='bg-primary p'>
-                <h3>Drop a Comment</h3>
+                <h3>Drop ur Comment...</h3>
             </div>
             <form
                 className='form my-1'
-                onSubmit={e => {
-                    e.preventDefault();
-                    addComment(postId, { text });
-                    setText('');
-                }}
-            >
+                onSubmit={onSubmit}>
                 <textarea
                     name='text'
-                    cols='32'
-                    rows='6'
+                    cols='30'
+                    rows='5'
                     placeholder='Comment the post'
                     value={text}
                     onChange={e => setText(e.target.value)}
@@ -32,14 +33,10 @@ const CommentForm = ({ postId, addComment }) => {
             </form>
         </div>
     );
-}
-
+};
 
 CommentForm.propTypes = {
     addComment: PropTypes.func.isRequired
 };
 
-export default connect(
-    null,
-    { addComment }
-)(CommentForm);
+export default connect(null, { addComment })(CommentForm);

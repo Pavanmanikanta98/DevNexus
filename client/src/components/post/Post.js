@@ -7,6 +7,7 @@ import PostItem from '../posts/PostItem';
 
 import { getPost } from '../../actions/post';
 import CommentForm from './CommentForm';
+import CommentItem from './CommentItem';
 
 const Post = ({ getPost, post: { post, loading } }) => {
     const { id } = useParams();
@@ -14,7 +15,7 @@ const Post = ({ getPost, post: { post, loading } }) => {
     useEffect(() => {
         getPost(id);
     }, [getPost, id]);
-    console.log(post);
+   // console.log(post._id);
 
     return (
         
@@ -29,6 +30,14 @@ const Post = ({ getPost, post: { post, loading } }) => {
         
                     <PostItem post={post} showAction={false}></PostItem>
                     <CommentForm postId={post._id} />
+                    <div className='comments'>
+                    
+                        {/* console.log(post.Comments); */}
+                        {post.Comments.map((comment)=> 
+                            (
+                            <CommentItem key={comment._id} comment={comment} postId={post._id} />
+                        )  )}
+                    </div>
             </Fragment>)
     );
 };
