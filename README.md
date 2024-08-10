@@ -59,6 +59,7 @@ Here are a few sample images showcasing the DevNexus application:
 - **Version Control**: Git
 
 ## Default.json
+   ```bash
   {
   "mongoURI": "Add your MongoDB connection string",
   "jwtSecret": "Add your JWT secret",
@@ -67,6 +68,7 @@ Here are a few sample images showcasing the DevNexus application:
     "clientSecret": "Add your client secret here"
   }
 }
+```
 
 ## Installation
 
