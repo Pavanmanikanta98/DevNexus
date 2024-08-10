@@ -1,0 +1,8 @@
+{
+    "mongoURI":"Add your Mongodb connection String",
+    "jwtSecret":"Add your jwt secret",
+    "github": {
+        "clientID": "Add your client ID here ( Get one for github)",
+        "clientSecret": "Add your client secrect here"
+      }
+} 
