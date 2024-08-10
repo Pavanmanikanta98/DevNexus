@@ -58,6 +58,16 @@ Here are a few sample images showcasing the DevNexus application:
 - **Database**: MongoDB
 - **Version Control**: Git
 
+## Default.json
+  {
+  "mongoURI": "Add your MongoDB connection string",
+  "jwtSecret": "Add your JWT secret",
+  "github": {
+    "clientID": "Add your client ID here (Get one for GitHub)",
+    "clientSecret": "Add your client secret here"
+  }
+}
+
 ## Installation
 
 To set up the DevNexus project locally, follow these steps:
