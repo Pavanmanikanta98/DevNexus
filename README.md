@@ -89,7 +89,7 @@ To set up the DevNexus project locally, follow these steps:
    ```bash
    npm install
    ```
-3. Have look on sample-default.json -[Default.json](#Default.json)
+3. Have look on sample-default.json 
      ```bash
      npm run dev
      ```
