@@ -16,12 +16,14 @@ DevNexus is a social platform designed for developers to connect, share knowledg
 
 Here are a few sample images showcasing the DevNexus application:
 
+
 *DevNexus Landing Page*
 ![Screenshot from 2024-08-10 11-38-05](https://github.com/user-attachments/assets/981088fb-66ee-4db1-b28f-9603e86ad7a8)
 
 
+
 *DevNexus Dashboard / user Profile*
-(![Screenshot from 2024-08-10 11-44-04](https://github.com/user-attachments/assets/4c711ae6-d5d5-4b53-b8b1-102f6a820451)
+![Screenshot from 2024-08-10 11-44-04](https://github.com/user-attachments/assets/4c711ae6-d5d5-4b53-b8b1-102f6a820451)
 
 
 *DevNexus Developers Profile*
@@ -30,6 +32,7 @@ Here are a few sample images showcasing the DevNexus application:
 
 *DevNexus Post Section*
 ![Screenshot from 2024-08-10 11-44-59](https://github.com/user-attachments/assets/ac0d2971-a88a-4103-9704-ba8d4f6d8926)
+
 
 
 *DevNexus Developers Page*
