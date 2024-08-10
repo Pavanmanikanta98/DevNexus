@@ -61,8 +61,7 @@ Here are a few sample images showcasing the DevNexus application:
 ## Contributing
 Contributions are welcome! If you have suggestions for improvements or new features, please fork the repository and submit a pull request.
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
 
 ## Default.json
 Have look on sample-default.json
@@ -80,19 +79,11 @@ The default.json file is essential for configuring your application, specifying 
 
 
 
-## Installation
 
-To set up the DevNexus project locally, follow these steps:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YourUsername/DevNexus.git
-   cd DevNexus
-   npm install
-   npm run dev
 
-```
-
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 
 
