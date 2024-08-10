@@ -60,6 +60,7 @@ Here are a few sample images showcasing the DevNexus application:
 
 ## Default.json
 Have look on sample-default.json
+The default.json file is essential for configuring your application, specifying important settings such as the MongoDB connection string, JWT secret, and GitHub credentials. Below is a sample structure of the default.json file:
    ```bash
   {
   "mongoURI": "Add your MongoDB connection string",
