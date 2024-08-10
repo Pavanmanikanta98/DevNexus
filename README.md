@@ -20,7 +20,7 @@ Here are a few sample images showcasing the DevNexus application:
 
 
 *DevNexus Dashboard / user Profile*
-[Screenshot from 2024-08-10 11-44-04](https://github.com/user-attachments/assets/4c711ae6-d5d5-4b53-b8b1-102f6a820451)
+(![Screenshot from 2024-08-10 11-44-04](https://github.com/user-attachments/assets/4c711ae6-d5d5-4b53-b8b1-102f6a820451)
 
 
 *DevNexus Developers Profile*
