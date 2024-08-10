@@ -15,9 +15,9 @@ DevNexus is a social platform designed for developers to connect, share knowledg
 ## Sample Images
 
 Here are a few sample images showcasing the DevNexus application:
-
-![DevNexus Login Page](https://github.com/YourUsername/DevNexus/blob/main/images/login.png)
-*DevNexus Login Page*
+*DevNexus Landing Page*
+![DevNexus Login Page](![Screenshot from 2024-08-10 11-38-05](https://github.com/user-attachments/assets/981088fb-66ee-4db1-b28f-9603e86ad7a8)
+)
 
 ![DevNexus User Profile](https://github.com/YourUsername/DevNexus/blob/main/images/profile.png)
 *DevNexus User Profile*
