@@ -20,19 +20,19 @@ Here are a few sample images showcasing the DevNexus application:
 
 
 *DevNexus Dashboard / user Profile*
-(![Screenshot from 2024-08-10 11-44-04](https://github.com/user-attachments/assets/4c711ae6-d5d5-4b53-b8b1-102f6a820451)
+[Screenshot from 2024-08-10 11-44-04](https://github.com/user-attachments/assets/4c711ae6-d5d5-4b53-b8b1-102f6a820451)
 
 
 *DevNexus Developers Profile*
-(![Screenshot from 2024-08-10 11-45-33](https://github.com/user-attachments/assets/57c01363-0ec1-41de-88f0-93b1a847b60d)
+[Screenshot from 2024-08-10 11-45-33](https://github.com/user-attachments/assets/57c01363-0ec1-41de-88f0-93b1a847b60d)
 
 
 *DevNexus Post Section*
-(![Screenshot from 2024-08-10 11-44-59](https://github.com/user-attachments/assets/ac0d2971-a88a-4103-9704-ba8d4f6d8926)
+[Screenshot from 2024-08-10 11-44-59](https://github.com/user-attachments/assets/ac0d2971-a88a-4103-9704-ba8d4f6d8926)
 
 
 *DevNexus Developers Page*
-(![Screenshot from 2024-08-10 11-44-29](https://github.com/user-attachments/assets/c2a2c5ed-367d-4a63-838e-1970e6977f1d)
+[Screenshot from 2024-08-10 11-44-29](https://github.com/user-attachments/assets/c2a2c5ed-367d-4a63-838e-1970e6977f1d)
 
 
 
