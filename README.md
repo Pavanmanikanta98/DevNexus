@@ -15,8 +15,9 @@ DevNexus is a social platform designed for developers to connect, share knowledg
 ## Sample Images
 
 Here are a few sample images showcasing the DevNexus application:
+
 *DevNexus Landing Page*
-(![Screenshot from 2024-08-10 11-38-05](https://github.com/user-attachments/assets/981088fb-66ee-4db1-b28f-9603e86ad7a8)
+![Screenshot from 2024-08-10 11-38-05](https://github.com/user-attachments/assets/981088fb-66ee-4db1-b28f-9603e86ad7a8)
 
 
 *DevNexus Dashboard / user Profile*
@@ -24,15 +25,15 @@ Here are a few sample images showcasing the DevNexus application:
 
 
 *DevNexus Developers Profile*
-[Screenshot from 2024-08-10 11-45-33](https://github.com/user-attachments/assets/57c01363-0ec1-41de-88f0-93b1a847b60d)
+![Screenshot from 2024-08-10 11-45-33](https://github.com/user-attachments/assets/57c01363-0ec1-41de-88f0-93b1a847b60d)
 
 
 *DevNexus Post Section*
-[Screenshot from 2024-08-10 11-44-59](https://github.com/user-attachments/assets/ac0d2971-a88a-4103-9704-ba8d4f6d8926)
+![Screenshot from 2024-08-10 11-44-59](https://github.com/user-attachments/assets/ac0d2971-a88a-4103-9704-ba8d4f6d8926)
 
 
 *DevNexus Developers Page*
-[Screenshot from 2024-08-10 11-44-29](https://github.com/user-attachments/assets/c2a2c5ed-367d-4a63-838e-1970e6977f1d)
+![Screenshot from 2024-08-10 11-44-29](https://github.com/user-attachments/assets/c2a2c5ed-367d-4a63-838e-1970e6977f1d)
 
 
 
