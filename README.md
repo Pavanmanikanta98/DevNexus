@@ -7,7 +7,7 @@ DevNexus is a social platform designed for developers to connect, share knowledg
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Default.json](#Default.json)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -58,6 +58,12 @@ Here are a few sample images showcasing the DevNexus application:
 - **Database**: MongoDB
 - **Version Control**: Git
 
+## Contributing
+Contributions are welcome! If you have suggestions for improvements or new features, please fork the repository and submit a pull request.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
 ## Default.json
 Have look on sample-default.json
 The default.json file is essential for configuring your application, specifying important settings such as the MongoDB connection string, JWT secret, and GitHub credentials. Below is a sample structure of the default.json file:
@@ -72,6 +78,8 @@ The default.json file is essential for configuring your application, specifying 
 }
 ```
 
+
+
 ## Installation
 
 To set up the DevNexus project locally, follow these steps:
@@ -82,3 +90,18 @@ To set up the DevNexus project locally, follow these steps:
    cd DevNexus
    npm install
    npm run dev
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
