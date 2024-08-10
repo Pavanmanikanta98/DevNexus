@@ -59,6 +59,7 @@ Here are a few sample images showcasing the DevNexus application:
 - **Version Control**: Git
 
 ## Default.json
+Have look on sample-default.json
    ```bash
   {
   "mongoURI": "Add your MongoDB connection string",
