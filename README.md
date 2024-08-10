@@ -11,6 +11,20 @@ DevNexus is a social platform designed for developers to connect, share knowledg
 - [Contributing](#contributing)
 - [License](#license)
 
+
+## Sample Images
+
+Here are a few sample images showcasing the DevNexus application:
+
+![DevNexus Login Page](https://github.com/YourUsername/DevNexus/blob/main/images/login.png)
+*DevNexus Login Page*
+
+![DevNexus User Profile](https://github.com/YourUsername/DevNexus/blob/main/images/profile.png)
+*DevNexus User Profile*
+
+![DevNexus Post Section](https://github.com/YourUsername/DevNexus/blob/main/images/posts.png)
+*DevNexus Post Section*
+
 ## Features
 
 - **User Profiles**: Create and manage user profiles to showcase skills and experiences.
@@ -33,5 +47,5 @@ To set up the DevNexus project locally, follow these steps:
    ```bash
    git clone https://github.com/YourUsername/DevNexus.git
    cd DevNexus
-   run npm install
+   npm install
    npm run dev
