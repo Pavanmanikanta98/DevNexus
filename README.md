@@ -64,7 +64,6 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 
 
 ## Default.json
-Have look on sample-default.json
 The default.json file is essential for configuring your application, specifying important settings such as the MongoDB connection string, JWT secret, and GitHub credentials. Below is a sample structure of the default.json file:
    ```bash
   {
@@ -76,6 +75,25 @@ The default.json file is essential for configuring your application, specifying 
   }
 }
 ```
+
+
+## Installation
+To set up the DevNexus project locally, follow these steps:
+
+ Clone the repository:
+ ```bash
+   git clone https://github.com/Pavanmanikanta98/DevNexus.git
+   cd DevNexus
+```
+2. Install the required dependencies:
+   ```bash
+   npm install
+   ```
+3. Have look on sample-default.json [Default.json](#Default.json)
+4. To run locally:
+     ```bash
+     npm run dev
+     ```
 
 
 
